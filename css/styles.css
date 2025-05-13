@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.google-logo {
+    margin-bottom: 30px;
+    max-width: 272px;
+    width: 100%;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 16px 24px;
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+#searchInput:focus {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-icon {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: #9aa0a6;
+    stroke-width: 2;
+}
+
+#searchResults {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#searchResults.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    padding: 20px;
+}
+
+.result-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.result-info h2 {
+    font-size: 24px;
+    color: #202124;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: #5f6368;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none; /* Esconde elementos */
+}
+
+/* Responsividade: adapta layout para telas menores */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .search-box {
+        max-width: 100%;
+    }
+    #searchInput {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+    .search-icon {
+        width: 24px;
+        height: 24px;
+    }
+    .result-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    #searchInput {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    .search-icon {
+        width: 22px;
+        height: 22px;
+    }
+}

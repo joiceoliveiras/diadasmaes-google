@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title> 
+    <link rel="stylesheet" href="css/styles.css"> <!-- Arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <!-- Logo Google -->
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="google-logo">
+            
+            <!-- Campo de busca personalizado -->
+            <form id="searchForm">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="melhor mãe do mundo"> <!-- Texto inicial sugerido -->
+                    <button type="submit" class="search-button"> <!-- Botão de busca -->
+                        <svg viewBox="0 0 24 24" class="search-icon">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Resultado simulado da busca -->
+    <div id="searchResults" class="hidden">
+        <div class="result-card">
+            <div class="result-content">
+                <img src="avo-passar-tempo-de-qualidade-com-familia.jpg" alt="Foto da mãe" class="profile-image">
+                <div class="result-info">
+                    <h2>Maria Silva</h2>
+                    <p class="subtitle">A melhor mãe do mundo</p>
+                    <p class="description">Seu amor e dedicação fazem toda a diferença.
+Você inspira e encanta quem tem você por perto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>
