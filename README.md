@@ -4,6 +4,7 @@ Este é um projeto simples desenvolvido com **HTML, CSS e JavaScript**, que simu
 
 A proposta é criar uma experiência divertida e carinhosa: ao digitar **"A melhor mãe do mundo"** e clicar em **Pesquisar**, os “resultados” exibem uma **foto de uma mãe** acompanhada de uma **mensagem especial**.
 
+Site: https://joiceoliveiras.github.io/diadasmaes-google/
 
 ## ✨ Objetivo
 - Praticar a construção de interfaces com **HTML e CSS**.  
